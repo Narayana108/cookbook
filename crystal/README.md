@@ -8,17 +8,19 @@ https://crystal-lang.org
 
 # Compile and runs files
 
-Dynamically compiled (libraries are not included in binary)
+- Dynamically compiled (libraries are not included in binary)
 `crystal build hello.cr`
-
-Statically compiled (libraries included in binary)
-`crystal build hello.cr --static`
-
-Production build (Optimized)
+ 
+- Production build (Optimized)
 `crystal build hello_world.cr --release` 
 
+- Statically compiled (libraries included in binary) (NOTE: Building fully statical linked executables is currently only supported on Alpine Linux.)
+`crystal build hello.cr --release --static`
 
-Run with out compile
+- Use `ldd` to view see dynimic links
+`ldd helloworld `
+
+- Run
 `crystal run hello.cr`
 
 # Standard library documentation
