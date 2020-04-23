@@ -2,19 +2,24 @@
 
 https://crystal-lang.org
 
-
 # Run playground
 
-``crystal play``
+`crystal play`
 
 # Compile and runs files
 
+Dynamically compiled (libraries are not included in binary)
 `crystal build hello.cr`
+
+Statically compiled (libraries included in binary)
 `crystal build hello.cr --static`
+
+Production build (Optimized)
 `crystal build hello_world.cr --release` 
 
 
-crystal run hello.cr
+Run with out compile
+`crystal run hello.cr`
 
 # Standard library documentation
 
