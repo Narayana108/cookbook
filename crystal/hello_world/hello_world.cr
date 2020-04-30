@@ -1,0 +1,1 @@
+puts "Hare Krsna World!"
