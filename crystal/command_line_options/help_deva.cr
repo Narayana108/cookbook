@@ -32,7 +32,8 @@ OptionParser.parse do |parser|
   parser.on "-p", "--pray=<your name>", "receive blessings" do |name|
     person = name
   end
-
+  
+  # Error handling
   parser.missing_option do |option_flag|
     STDERR.puts "ERROR #{option_flag} is missing something."
     STDERR.puts parser

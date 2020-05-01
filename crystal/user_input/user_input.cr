@@ -1,5 +1,5 @@
 puts "Namaste! Please chant along with us!"
-puts "Enter a chant a sacred chant that you like"
+puts "Enter a sacred chant that you like"
 print "> "
 # 'gets' is a method to get user input
 user_input = gets

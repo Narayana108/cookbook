@@ -2,7 +2,7 @@ require "colorize"
 
 chant = true
 
-# There are many ways alternate ways to format text
+# There are many alternate ways to format text
 # Colorize must be written in this format for chaining
 puts "Hare Krsna".colorize.fore(:yellow).back(:blue).mode(:bold)
 puts ""
