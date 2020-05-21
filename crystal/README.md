@@ -6,7 +6,7 @@ https://crystal-lang.org
 
 `crystal play`
 
-# Compile and runs files
+# Build and runs files
 
 - Run
 `crystal run hello_world.cr`

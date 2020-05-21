@@ -1,0 +1,1 @@
+ The Go language was conceived in September 2007 by Robert Griesemer, Rob Pike, and Ken Thompson at Google.
