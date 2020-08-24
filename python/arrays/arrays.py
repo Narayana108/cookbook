@@ -28,7 +28,7 @@ for x in thislist:
   print(x)
 
 # Change value
-thislist[1] = "blackcurrant" 
+thislist[1] = "blackcurrant"
 print(thislist)
 
 # Check if item exists
@@ -63,3 +63,7 @@ list1 = ["a", "b", "c"]
 list2 = [1, 2, 3]
 list3 = list1 + list2
 print(list3)
+
+# Tuple (Unchagable array)
+thistuple = ("om","tat","sat")
+print(thistuple)
