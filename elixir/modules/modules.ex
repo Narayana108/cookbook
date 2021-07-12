@@ -1,4 +1,5 @@
 # We can group multiple functions into a model.
+IO.puts "\nmodule:"
 
 defmodule Example do
   def sum(a, b) do
@@ -15,6 +16,7 @@ IO.puts(Example.greeting("Shiva"))
 
 
 # Nested modules
+IO.puts "\nnested:"
 
 defmodule Example.Greetings do
   def morning(name) do
@@ -29,6 +31,8 @@ end
 IO.puts(Example.Greetings.morning "Narayan")
 
 # Module Attributes
+IO.puts "\nattributes:"
+
 defmodule Attributes do
   @greeting "Hello"
 
@@ -43,6 +47,7 @@ IO.puts(Attributes.greeting "Shankar")
 # Structs are special maps with a defined set of keys and default values. A struct must be defined within a module, which it takes its name from. It is common for a struct to be the only thing defined within a module.
 
 #To define a struct we use defstruct along with a keyword list of fields and default values:
+IO.puts "\n stuct:"
 
 defmodule Example.User do
   #@derive {Inspect, only: [:name]} # Hides fields
@@ -60,6 +65,7 @@ IO.inspect(aum)
 
 # Composition - Interact with other modules
 ## alias
+IO.puts "\n alias:"
 
 defmodule Sayings.Greetings do
   def basic(name), do: "Hi, #{name}"
