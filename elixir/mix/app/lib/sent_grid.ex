@@ -12,11 +12,16 @@ defmodule SentGrid do
       iex> SentGrid.send_email(:spam)
       {:error, "Invalid email type."}
   """
-  def send_email(:marketing) do
-    {:ok, "Marketing email sent."}
+  def send_email(email)do
+    {:ok, "Email sent to: #{email}"}
   end
 
-  def send_email(:support), do: {:ok, "Support email sent."}
-  def send_email(:other), do: {:ok, "Other email sent."}
-  def send_email(_), do: {:error, "Invalid email type."}
+  #def send_email(:marketing) do
+    #{:ok, "Marketing email sent."}
+  #end
+
+  #def send_email(:support), do: {:ok, "Support email sent."}
+  #def send_email(:other), do: {:ok, "Other email sent."}
+  #def send_email(_), do: {:error, "Invalid email type."}
+
 end
