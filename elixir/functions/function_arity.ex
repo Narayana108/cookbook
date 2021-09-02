@@ -2,6 +2,8 @@
 # Arity is a fancy name for the number of arguments a function receives. A function is
 # uniquely identified by its containing module, its name, and its arity
 
+# This is to demonstrate functions with the same name but different arities
+
 defmodule User do
   defp update_db(type, field) do
     IO.puts("#{type}: #{field} added to db")
@@ -9,6 +11,10 @@ defmodule User do
 
   defp send_email(email) do
     IO.puts("Email sent to: #{email}")
+  end
+
+  defp create_btc_wallet do
+    IO.puts("Bitcoin wallet created")
   end
 
   def add(name, email) do
@@ -21,6 +27,7 @@ defmodule User do
     update_db("name", name)
     update_db("email", email)
     update_db("user_id", user_id)
+    create_btc_wallet()
     send_email(email)
   end
 end
