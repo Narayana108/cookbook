@@ -33,3 +33,22 @@ mix new project_name --modlue ProjectName
 
 # Docs
 https://elixir-lang.org/docs.html
+
+## Phoenix
+### Bootstrap phoenix
+```sh
+# Create phoenix skeleton
+mix phx.new hello
+
+# Create database
+cd hello
+mix ecto.create
+
+# Start server
+mix phx.server
+```
+
+Run your app inside IEx (Interactive Elixir) as:
+```sh
+iex -S mix phx.server
+```
