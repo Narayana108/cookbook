@@ -8,8 +8,10 @@ case 3 do
 end
 
 case {1, 2, 3} do
-  {1, x, 3} when x > 0 -> 
-    IO.puts "Will match"
+  {1, x, 3} when x > 0 ->
+    # This case automatically binds x to 2
+    IO.puts("Will match")
+
   _ ->
-    IO.puts "Won't match"
+    IO.puts("Won't match")
 end
