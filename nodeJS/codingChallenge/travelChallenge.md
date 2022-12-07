@@ -7,15 +7,19 @@ After visiting a place of pilgrimage you will come back to Vrindavan and then vi
 Display all the destinations reached.
 
 ### Details:
+```
 RadhaKunda = 20 km
 Gorvarhdan = 40 km
 Barsana = 60 km
+```
 These above vales is already calculated for the total distance (there and back).
 You will always spend  an additional 60 min at a destination.
 
 You have x ruppess and y time.
+```
 1km = 2min travel time
 1km = 2 ruppee.
+```
 
 Distances and prices are not realistic and are made up.
 
